@@ -73,7 +73,9 @@ If we type “ma” to the search field we can see that query is something like 
 
 Using this SQL query we can get all of table schema and names from information_schema.tables.
 
-`' and 1 = 0 union all select 1,table_schema,table_name,4,5,6,7 from information_schema.tables where 1=0 or 1=1-- '`
+```
+' and 1 = 0 union all select 1,table_schema,table_name,4,5,6,7 from information_schema.tables where 1=0 or 1=1-- '
+```
 
 There were a lot of database name and table names. The reason is that we added 1=1 to end of query and that means bring all of the database and table names to us. There are more elegant ways to get table names of the database. For example,
 ```
