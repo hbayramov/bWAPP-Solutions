@@ -17,7 +17,7 @@ Now we know that there is no any filter. Since we got an error, we are sure that
 
 There are two ways to find number of columns.
 
-1. Using Order by
+1.Using Order by
 
 Order by  statement tell the database how to order the result. For example, the command below will order all the result by ascending order. Also we can change asc to desc.
 
