@@ -8,7 +8,9 @@ We added `'` character to the id in the url to see what kind of output we will g
 The output depends on the script's quality. If script filters input then no SQL error would be returned. Page will load normally or give a warning like “Attack Spotted, Your IP Address has been recorded” or something similar.  However we have got error like this: 
 
 ```
+
 Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+
 ```
 
 Now we know that there is no any filter. Since we got an error, we are sure that this is SQL injectable and we can try to get some hidden data information from database.
